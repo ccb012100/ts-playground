@@ -10,8 +10,10 @@
             "name": "Launch Program",
             "runtimeExecutable": "npx",
             "runtimeArgs": [
-                "ts-node",
-                "main.ts"
+                "ts-node-dev",
+                "--respawn",
+                "--transpile-only",
+                "main.ts",
             ],
             "cwd": "${workspaceRoot}",
             "internalConsoleOptions": "openOnSessionStart"
